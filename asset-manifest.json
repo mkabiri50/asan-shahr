@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/asan-shahr/static/css/main.f7b1ae94.chunk.css",
+    "main.js": "/asan-shahr/static/js/main.92e1de0b.chunk.js",
+    "main.js.map": "/asan-shahr/static/js/main.92e1de0b.chunk.js.map",
+    "runtime-main.js": "/asan-shahr/static/js/runtime-main.a67b1b13.js",
+    "runtime-main.js.map": "/asan-shahr/static/js/runtime-main.a67b1b13.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/asan-shahr/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.26d2cbd3.chunk.js": "/asan-shahr/static/js/2.26d2cbd3.chunk.js",
+    "static/js/2.26d2cbd3.chunk.js.map": "/asan-shahr/static/js/2.26d2cbd3.chunk.js.map",
+    "index.html": "/asan-shahr/index.html",
+    "precache-manifest.51bea4383d0988526dc52195d8c63460.js": "/asan-shahr/precache-manifest.51bea4383d0988526dc52195d8c63460.js",
+    "service-worker.js": "/asan-shahr/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/asan-shahr/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.f7b1ae94.chunk.css.map": "/asan-shahr/static/css/main.f7b1ae94.chunk.css.map",
+    "static/media/p-1.jpg": "/asan-shahr/static/media/p-1.b627c504.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a67b1b13.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.26d2cbd3.chunk.js",
+    "static/css/main.f7b1ae94.chunk.css",
+    "static/js/main.92e1de0b.chunk.js"
+  ]
+}
