@@ -1,0 +1,9 @@
+
+export const SET_HOUSES='SET_HOUSES';
+export const FETCH_HOUSES_FAILED = 'FETCH_HOUSES_FAILED;';
+export const GET_HOUSE_DETAIL='GET_HOUSE_DETAIL';
+
+
+export const AUTH_START = "AUTH_START";
+
+
