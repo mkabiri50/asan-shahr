@@ -7,6 +7,7 @@ import * as yup from "yup";
 
 class Auth extends Component {
   render() {
+ 
     const validationSchema = yup.object().shape({
       email: yup
         .string()
@@ -23,9 +24,7 @@ class Auth extends Component {
         .string()
         .required()
         .label("Confirm password")
-        .test("passwords-match", "Passwords must match ya fool", function(
-          value
-        ) {
+        .test('passwords-match', 'Passwords must match ya fool', function(value) {
           return this.parent.password === value;
         })
     });
@@ -33,11 +32,12 @@ class Auth extends Component {
       <Formik
         initialValues={{ email: "", password: "", confirmPassword: "" }}
         onSubmit={(values, actions) => {
-         
-         this.props.onAuthentication(JSON.stringify(values))
-         this.props.history.push( '/houses');
+          alert(JSON.stringify(values));
+          this.props.onAuthentication(values)
+          setTimeout(() => {
             actions.setSubmitting(false);
-      
+            this.props.history.push('/houses');
+          }, 1000);
         }}
         validationSchema={validationSchema}
       >
@@ -48,7 +48,7 @@ class Auth extends Component {
               label="Email"
               formikProps={formikProps}
               formikKey="email"
-              placeholder="johndoe@example.com"
+
               autoFocus
             />
 
@@ -56,18 +56,18 @@ class Auth extends Component {
               label="Password"
               formikProps={formikProps}
               formikKey="password"
-              placeholder="password"
+
               type="password"
             />
             <FormikStyle
-              label="Confirm Password"
+              label="Confirm password"
               formikProps={formikProps}
               formikKey="confirmPassword"
-              placeholder="confirm password"
+
               type="password"
             />
 
-            <button   type="button" className="btn btn-dark"onClick={formikProps.handleSubmit} disabled={formikProps.isSubmitting}>LOGIN</button>
+            <button type="button" className="btn btn-dark"onClick={formikProps.handleSubmit} disabled={formikProps.isSubmitting}>LOGIN</button>
           </div>
         )}
       </Formik>
