@@ -32,8 +32,7 @@ class Auth extends Component {
       <Formik
         initialValues={{ email: "", password: "", confirmPassword: "" }}
         onSubmit={(values, actions) => {
-          alert(JSON.stringify(values));
-          this.props.onAuthentication(values)
+          this.props.onAuthentication(JSON.stringify(values))
           setTimeout(() => {
             actions.setSubmitting(false);
             this.props.history.push('/houses');
