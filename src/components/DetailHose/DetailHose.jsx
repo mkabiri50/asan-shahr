@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 import {Redirect} from 'react-router-dom'
 import Carousel from '../common/Carousel'
 class DetailHouse extends Component {
+
   render() {
+    console.log(this.props,'history')
     const {
       estateType,
       zone,
@@ -80,8 +82,7 @@ class DetailHouse extends Component {
           <p>  سیستم اتفاِء حریق :{Boolean(hasFireFighting)}</p>
           <p>  شوتینگ زباله :{Boolean(hasWasteShooting)}</p>
          </div>
-         
-    
+         <button  type="button" className="btn btn-danger m-4" onClick={()=>this.props.history.goBack()} >بازگشت به صفحه اصلی</button>
       </div>
     );
   }

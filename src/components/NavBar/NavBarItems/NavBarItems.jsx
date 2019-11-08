@@ -11,7 +11,7 @@ class navigationItems extends Component {
           {this.props.isAuth ? (
             <p>به آسان شهر خوش آمدید</p>
           ) : (
-            <p> لطفا ابتدا ثبت نام</p>
+            <p> لطفا ابتدا ثبت نام کنید</p>
           )}
         </ul>
       </nav>

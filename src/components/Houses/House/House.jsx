@@ -36,7 +36,7 @@ const House = props => {
         </div>
       </div>
       <div className="card-footer">
-        <button onClick={clicked} className="text-muted">
+        <button type="button" className="btn btn-info" onClick={clicked}>
           اطلاعات بیشتر
         </button>
       </div>

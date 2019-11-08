@@ -22,22 +22,27 @@ code {
   border: 1px solid #eee;
   box-sizing: border-box;
   padding: 20px;
- background-color:#d9ecf3
+  background-color: #d9ecf3;
 }
 
-
-@media(min-width:600px) {
+@media (min-width: 600px) {
   .Auth {
-      width: 500px;
+    width: 500px;
   }
 }
-.OPTION_DETAIL{
-  display:flex;
+
+.container h1 {
+  border: 2px solid #eee;
+  background-color: #d9ecf3;
+  padding: 16px;
+  margin: 20px;
+}
+.OPTION_DETAIL {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
-.OPTION_DETAIL p{
+.OPTION_DETAIL p {
   border: 1px solid blue;
   margin: 10px;
   padding: 10px;

@@ -8,10 +8,8 @@ class Houses extends Component {
 
   componentDidMount() {
     this.props.onInitHouses(this.props.houses)
-  
-
-
   }
+
   handleShowMore=house=>{
     console.log(house)
     this.props.onShowDetails(house)
